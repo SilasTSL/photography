@@ -6,10 +6,19 @@ import { Footer } from './components/footer/Footer';
 import { TermsAndConditions } from "./pages/terms_and_conditions/TermsAndConditions";
 
 function App() {
+
+  const data = {
+    header: {
+      name: "Malcolm Lee",
+      initials: "MLP",
+      themes: ["Portraits", "Food", "Landscapes"]
+    }
+  };
+
   return (
     <Router>
       <div className="App">
-        <Header />
+        <Header data={data.header} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/termsandconditions" element={<TermsAndConditions />} />

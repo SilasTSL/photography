@@ -1,4 +1,29 @@
 .headerContainer {
-    background-color: red;
-    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: transparent;
+}
+
+.headerLogo {
+    font-size: 2rem;
+    color: black;
+}
+
+.headerLinksContainer {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialsHeaderContainer {
+    font-size: 1.8rem;
+}
+
+.socialIcon {
+    margin: 0px 5px;
 }
